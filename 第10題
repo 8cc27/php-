@@ -1,1 +1,8 @@
 
+<?php
+session_start(); // 啟用 session
+unset($_SESSION["counter"]); // 清除 counter 值
+
+echo "counter重置成功....";
+echo "<meta http-equiv=REFRESH content='2; url=8.counter.php'>"; // 2 秒後跳轉
+?>
