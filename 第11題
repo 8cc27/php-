@@ -1,1 +1,8 @@
+<?php
+session_start(); // 啟用 session
+unset($_SESSION["id"]); // 清除登入的 id
+
+echo "登出成功....";
+echo "<meta http-equiv=REFRESH content='3; url=2.login.html'>"; // 3 秒後跳轉回登入頁
+?>
 
